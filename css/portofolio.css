@@ -335,10 +335,6 @@ button {
   color: #212121;
 }
 
-.more {
-  border: 0px;
-}
-
 .netlist, .contacts, .flax, .products, .roof-connection, .roof-nav {
   list-style: none;
   padding: 0;
