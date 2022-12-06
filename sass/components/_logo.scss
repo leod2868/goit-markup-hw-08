@@ -10,3 +10,27 @@
 .roof-multi {
     color: $black-color;
 }
+.menu-batton {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none ;
+    background-color: transparent;
+
+}
+.menu-batton .icon-cross {
+    display: none;
+}
+.menu-batton.is-open .icon-cross {
+    display: block;
+}
+.menu-batton.is-open .icon-menu {
+    display: none;
+}
+.menu-conteiner {
+   background-color: $white-color;
+   position: absolute; 
+   top: 100%;
+   left: 0%;
+   width: 100%;
+}
