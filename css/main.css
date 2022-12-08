@@ -306,24 +306,30 @@ button {
   border-radius: 4px;
 }
 
-.conteiner {
+.container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
-@media screen and (min-widht: 480px) {
-  .conteiner {
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     width: 1200px;
   }
 }
@@ -731,19 +737,12 @@ button {
 }
 
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantage {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .balance {
   width: 270px;
-}
-.balance:not(:last-child) {
-  margin-right: 30px;
 }
 
 .icon-help {
@@ -814,10 +813,6 @@ button {
   gap: 30px;
 }
 
-.group {
-  display: flex;
-  gap: 30px;
-}
 .group .sechion-title {
   font-weight: 500;
   font-size: 16px;
@@ -854,8 +849,8 @@ button {
 
 .team {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .net {
@@ -883,11 +878,6 @@ button {
   margin-right: 10px;
 }
 
-.clients {
-  display: flex;
-  gap: 30px;
-}
-
 .hope {
   display: flex;
   width: 170px;
@@ -909,11 +899,6 @@ button {
 }
 .logo:hover {
   fill: #2196F3;
-}
-
-.fichion {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .footer {

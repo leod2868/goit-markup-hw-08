@@ -1,18 +1,18 @@
 .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @extend %conteiner;
 }
 .advantage {
-    display: flex;
+    // display: flex;
     @extend %list;
     }
     
 .balance {
     width: 270px;
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
+    // &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
 }
 .icon-help {
     display: flex;
