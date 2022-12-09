@@ -331,7 +331,7 @@ button {
   color: #212121;
 }
 
-.netlist, .contacts, .clients, .net, .group, .gadget, .idea, .advantage, .roof-connection, .roof-nav {
+.netlist, .contacts, .clients, .net, .group, .gadget, .idea, .advantage, .roof-connection, .roof-nav, .reider {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -424,6 +424,30 @@ button {
     width: 100%;
     display: none;
   }
+}
+
+.reider {
+  display: flex;
+  gap: 20px;
+  margin-top: 64px;
+}
+
+.reider-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  position: relative;
+}
+.reider-link::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  transform: rotate(90deg);
+  bottom: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .nav-link {
