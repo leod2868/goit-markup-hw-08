@@ -39,7 +39,11 @@
     background-color: $thirdly-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    
          }
+.newteam {
+    @extend %conteiner;
+ }
     
 .net {
     display: flex;

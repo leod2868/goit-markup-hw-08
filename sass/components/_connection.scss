@@ -1,12 +1,12 @@
 .roof-connection {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 30px;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // gap: 30px;
     @extend %list;
-    & .item:not(:last-child) {
-            margin-right: 50px;
-        }
+    // & .item:not(:last-child) {
+    //         margin-right: 50px;
+    //     }
 }
 .connection-link {
      color: $primary-text-color;

@@ -308,15 +308,8 @@ button {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1199px) {
-  .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -344,16 +337,33 @@ button {
   margin: 0;
 }
 
-.benefits {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.bigfooter, .science, .newteam, .activ, .benef, .main {
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .bigfooter, .science, .newteam, .activ, .benef, .main {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bigfooter, .science, .newteam, .activ, .benef, .main {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bigfooter, .science, .newteam, .activ, .benef, .main {
+    width: 1200px;
+  }
 }
 
 .main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
 }
 
 .roof-logo {
@@ -370,40 +380,46 @@ button {
   color: #000;
 }
 
-.menu-batton {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 
-.menu-batton .icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
 
-.menu-batton.is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-batton.is-open .icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
 .menu-conteiner {
   background-color: #FFFFFF;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 10 0%;
+  padding: 48px 40px;
 }
-
-.roof-nav {
-  display: flex;
-  align-items: center;
+.menu-conteiner.is-open {
+  display: block;
 }
-.roof-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .menu-conteiner {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    display: none;
+  }
 }
 
 .nav-link {
@@ -425,28 +441,6 @@ button {
 
 .current {
   color: #2196F3;
-  position: relative;
-}
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 2px;
-  background-color: #2196F3;
-}
-
-.roof-connection {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 30px;
-}
-.roof-connection .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .connection-link {
@@ -493,7 +487,6 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
-  width: 696px;
 }
 
 .button {
@@ -531,6 +524,8 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 93px 15px;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -540,15 +535,17 @@ button {
 .modal {
   width: 528px;
   height: 581px;
-  position: absolute;
-  transform: translate(-50%, -50%) scale(1);
-  top: 50%;
-  left: 50%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #FFFFFF;
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
@@ -620,7 +617,7 @@ button {
 }
 
 .form-bigframe {
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -690,7 +687,7 @@ button {
 }
 
 .check {
-  padding-left: 37px;
+  padding-left: 10px;
   margin: 0;
 }
 
@@ -742,7 +739,12 @@ button {
 }
 
 .balance {
-  width: 270px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .balance:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .icon-help {
@@ -763,6 +765,11 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .advantage .sechion-title {
+    text-align: center;
+  }
 }
 
 .idea {
@@ -901,15 +908,15 @@ button {
   fill: #2196F3;
 }
 
-.footer {
-  background: #2F303A;
+.fichion {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.bigfooter {
-  display: flex;
-  align-items: baseline;
+.footer {
+  background: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .halffooter {
@@ -997,9 +1004,6 @@ button {
   margin-left: auto;
 }
 
-.signature {
-  display: flex;
-}
 .signature input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);

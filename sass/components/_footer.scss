@@ -2,10 +2,13 @@
     background: $secondary-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    
+          
 }
 .bigfooter {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    @extend %conteiner;
 }
 
 .halffooter {

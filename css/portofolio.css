@@ -308,15 +308,8 @@ button {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
-}
-@media screen and (max-width: 1199px) {
-  .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -344,9 +337,33 @@ button {
   margin: 0;
 }
 
+.bigfooter, .main {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .bigfooter, .main {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bigfooter, .main {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .bigfooter, .main {
+    width: 1200px;
+  }
+}
+
 .main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
 }
 
 .roof-logo {
@@ -363,40 +380,46 @@ button {
   color: #000;
 }
 
-.menu-batton {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
 
-.menu-batton .icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
 
-.menu-batton.is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-batton.is-open .icon-menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
 .menu-conteiner {
   background-color: #FFFFFF;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  width: 10 0%;
+  padding: 48px 40px;
 }
-
-.roof-nav {
-  display: flex;
-  align-items: center;
+.menu-conteiner.is-open {
+  display: block;
 }
-.roof-nav .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .menu-conteiner {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    display: none;
+  }
 }
 
 .nav-link {
@@ -418,28 +441,6 @@ button {
 
 .current {
   color: #2196F3;
-  position: relative;
-}
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-radius: 2px;
-  background-color: #2196F3;
-}
-
-.roof-connection {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 30px;
-}
-.roof-connection .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .connection-link {
@@ -585,11 +586,6 @@ button {
   padding-bottom: 60px;
 }
 
-.bigfooter {
-  display: flex;
-  align-items: baseline;
-}
-
 .halffooter {
   margin-right: 70px;
 }
@@ -675,9 +671,6 @@ button {
   margin-left: auto;
 }
 
-.signature {
-  display: flex;
-}
 .signature input {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);

@@ -1,7 +1,9 @@
 .benefits {
     padding-top: 60px;
-    padding-bottom: 60px;
-    @extend %conteiner;
+    padding-bottom: 60px;   
+}
+.benef {
+@extend %conteiner;
 }
 .advantage {
     // display: flex;
@@ -9,10 +11,12 @@
     }
     
 .balance {
-    width: 270px;
-    // &:not(:last-child) {
-    //         margin-right: 30px;
-    //     }
+    width: 100%;
+     &:not(:last-child) {
+        @media screen and ( max-width: 767px) {
+        margin-bottom: 30px;
+        }   
+         }
 }
 .icon-help {
     display: flex;
@@ -31,6 +35,9 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: $title-text-color;
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
 }
 .idea {
     line-height: 1.7;

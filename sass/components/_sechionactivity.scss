@@ -36,3 +36,6 @@
     gap: 30px;
     @extend %list;
     }
+.activ {
+    @extend %conteiner;
+}
