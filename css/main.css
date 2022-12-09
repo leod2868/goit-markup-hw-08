@@ -362,8 +362,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    height: 60px;
+  }
 }
 
 .roof-logo {
@@ -426,14 +430,15 @@ button {
   color: #212121;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .nav-link {
+    font-size: 40px;
+    line-height: 1.18;
+    margin-bottom: 32px;
+  }
 }
 .nav-link:hover, .nav-link:focus {
   color: #2196F3;
@@ -443,6 +448,12 @@ button {
   color: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .navic {
+    margin-bottom: 306px;
+  }
+}
+
 .connection-link {
   color: #757575;
   text-decoration: none;
@@ -450,14 +461,21 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.connection-link:hover, .connection-link:focus {
-  color: #2196F3;
+
+@media screen and (max-width: 767px) {
+  .connection-link.tormoz {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .connection-link.stupor {
+    font-size: 34px;
+    line-height: 1.18;
+    color: #2196F3;
+  }
 }
 
 .flash {
@@ -473,10 +491,21 @@ button {
   fill: #2196F3;
 }
 
+@media screen and (max-width: 767px) {
+  .small {
+    display: none;
+  }
+}
+
 .hero {
   background: #2F303A;
   text-align: center;
   padding: 200px 0;
+}
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding: 118px 0;
+  }
 }
 .hero-title {
   color: #FFFFFF;
@@ -738,12 +767,24 @@ button {
   padding-bottom: 60px;
 }
 
-.balance {
-  width: 100%;
-}
 @media screen and (max-width: 767px) {
+  .balance {
+    width: 100%;
+  }
   .balance:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .balance {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .balance {
+    width: 270px;
   }
 }
 
@@ -835,6 +876,26 @@ button {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .friend {
+    width: 100%;
+  }
+  .friend:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .friend {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .friend {
+    width: 270px;
+  }
+}
 
 .name {
   padding-top: 30px;
@@ -885,6 +946,12 @@ button {
   margin-right: 10px;
 }
 
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .hope {
   display: flex;
   width: 170px;
@@ -898,6 +965,18 @@ button {
 }
 .hope:hover {
   color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .hope {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hope {
+    width: 226px;
+  }
 }
 
 .logo {
@@ -919,8 +998,11 @@ button {
   padding-bottom: 60px;
 }
 
-.halffooter {
-  margin-right: 70px;
+@media screen and (max-width: 1199px) {
+  .halffooter {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-logo {
@@ -973,6 +1055,11 @@ button {
   display: flex;
   justify-content: flex-start;
 }
+@media screen and (max-width: 1199px) {
+  .netlist {
+    justify-content: center;
+  }
+}
 
 .combo-net {
   display: flex;
@@ -995,13 +1082,29 @@ button {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .accession {
+    text-align: center;
+  }
+}
 
 .netlisticon {
   fill: #FFFFFF;
 }
 
+@media screen and (max-width: 1199px) {
+  .chrom {
+    margin-bottom: 60px;
+  }
+}
+
 .subscription {
   margin-left: auto;
+}
+@media screen and (max-width: 1199px) {
+  .subscription {
+    text-align: center;
+  }
 }
 
 .signature input {
@@ -1013,9 +1116,21 @@ button {
   background-color: transparent;
   color: #F5F5F5;
 }
+@media screen and (max-width: 1199px) {
+  .signature input {
+    width: 450px;
+  }
+}
 
 .plus {
   margin-left: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .plus {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 }
 
 .plaine {

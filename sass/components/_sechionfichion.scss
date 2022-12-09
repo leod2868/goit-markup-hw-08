@@ -1,6 +1,7 @@
 .clients {
-    // display: flex;
-    // gap: 30px;
+     display: flex;
+     flex-wrap: wrap;
+    gap: 30px;
     @extend %list;
 }
 .hope {
@@ -14,9 +15,19 @@
     color: #AFB1B8;
     transition: color 250ms $timing-function;
     &:hover {
-            color: $accent-color;
+            color: $accent-color;}
 }
+
+.hope {
+@media screen and (max-width: 767px){
+    width: 210px;}
 }
+.hope {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+    }
+}
+
 .logo {
     fill: currentColor;
     transition: fill 250ms $timing-function;

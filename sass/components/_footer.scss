@@ -12,5 +12,9 @@
 }
 
 .halffooter {
-    margin-right: 70px;
+    // margin-right: 70px;
+    @media screen and ( max-width: 1199px ) {
+      text-align: center;
+      margin-bottom: 60px                      ;  
+    }
 }

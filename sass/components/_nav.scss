@@ -10,16 +10,25 @@
      color: $title-text-color;
      text-decoration: none;
      font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
      letter-spacing: 0.02em;
-     display: flex;
-     align-items: center;
-     padding-top: 32px;
-     padding-bottom: 32px;
+     
+    @media screen and (max-width: 767px){
+       font-size: 40px;
+       line-height: 1.18; 
+       margin-bottom: 32px;
+    }
+
+    //  font-size: 14px;
+    //  line-height: 1.14;
+    //  display: flex;
+    //  align-items: center;
+    //  padding-top: 32px;
+    //  padding-bottom: 32px;
      transition: color 250ms $timing-function;
      &:hover , &:focus {
             color: $accent-color;}
+
+
 }
 .current {
     color: $accent-color;
@@ -36,3 +45,8 @@
     //         background-color: $accent-color;
     //     }
     }
+.navic {
+@media screen and (max-width: 767px) {
+        margin-bottom: 306px;
+    }
+}    
