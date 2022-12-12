@@ -881,6 +881,14 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .balance {
     width: 100%;
@@ -990,6 +998,13 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .friend {
