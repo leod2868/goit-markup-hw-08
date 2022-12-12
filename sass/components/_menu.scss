@@ -1,44 +1,109 @@
-.menu-button {
-    display: inline-flex;
+// .menu-button {
+//     display: inline-flex;
+//     margin: 0;
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+
+//     @media screen and (min-width: 768px) {
+//         display: none;
+//     }
+
+// }
+
+// .menu-button .icon-cross {
+//     display: none;
+// }
+
+// .menu-button.is-open .icon-cross {
+//     display: block;
+// }
+
+// .menu-button.is-open .icon-menu {
+//     display: none;
+// }
+
+// .menu-conteiner {
+//     background-color: $white-color;
+//     padding: 48px 40px;
+
+//     &.is-open {
+//         display: block;
+//     }
+
+//     @media screen and (max-width: 767px) {
+//         position: absolute;
+//         top: 100%;
+//         left: 0%;
+//         width: 100%;
+//         display: none;
+//     }
+// }
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0;
     padding: 0;
-    border: none;
     background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
 
-    @media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+    .menu-toggle {
         display: none;
     }
-
 }
 
-.menu-button .icon-cross {
-    display: none;
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-button.is-open .icon-cross {
-    display: block;
-}
-
-.menu-button.is-open .icon-menu {
-    display: none;
-}
-
-.menu-conteiner {
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px ;
     background-color: $white-color;
-    padding: 48px 40px;
+    z-index: 999;
 
-    &.is-open {
-        display: block;
-    }
-
-    @media screen and (max-width: 767px) {
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        width: 100%;
-        display: none;
-    }
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
 }
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .reider {
     @extend %list;
     display: flex;

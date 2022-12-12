@@ -12,53 +12,53 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-  <header class="roof">
-    <div class="conteiner main">
-      <a href="./index.html" class="roof-logo">Web<span class="roof-multi">Studio</span></a>
-      <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-conteiner" data-menu-button>
-         <svg width="40px" height="40px"  aria-label="переключатель мобильного меню">
-         <use class="icon-menu" href="./images/symbol-defsnew2.svg#icon-menu_40px"></use>
-         <use class="icon-cross" href="./images/symbol-defsnew2.svg#icon-close_40px"></use>
-         </svg>
-      </button>
-      <div class="menu-conteiner is-open" id="menu-conteiner" data-menu >
-         <nav class="navic">
-           <ul class="roof-nav list">
-             <li class="item"><a href="./index.html" class="nav-link current">Студія</a></li>
-             <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-             <li class="item"><a href="./index.html" class="nav-link">Контакти</a></li>
-           </ul>
-         </nav>
-          <ul class="roof-connection list">
-            <li class="flash">
-             <a href="mailto:info@devstudio.com" class="connection-link tormoz">
-               <svg width="16" height="12" class="small">
-                  <use href="./images/symbol-defs-new.svg#icon-envelope-hover"></use>
-               </svg>
-               info@devstudio.com
-             </a>
-            </li>
-            <li class="flash">
-             <a href="tel:+380961111111" class="connection-link stupor">
-               <svg width="10" height="16" class="small">
-                 <use href="./images/symbol-defs-new.svg#icon-smartphone"></use>
-               </svg>
-                +38 096 111 11 11
-             </a>
-            </li>
-          </ul>
-          <div>
-            <ul class="reider">
-              <li class=""><a class="reider-link">Instagram</a></li>
-              <li><a class="reider-link">Twitter</a></li>
-              <li><a class="reider-link">Facebook</a></li>
-              <li><a class="reider-link">LinkedIn</a></li>
+  <body>
+     <header class="roof">
+      <div class="conteiner main">
+        <a href="./index.html" class="roof-logo">Web<span class="roof-multi">Studio</span></a>
+          <!-- <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-conteiner"
+            data-menu-button>
+            <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+              <use class="icon-menu" href="./images/symbol-defsnew2.svg#icon-menu_40px"></use>
+              <use class="icon-cross" href="./images/symbol-defsnew2.svg#icon-close_40px"></use>
+            </svg>
+          </button> -->
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        
+            <nav class="navic">
+              <ul class="roof-nav list">
+                <li class="item"><a href="./index.html" class="nav-link current">Студія</a></li>
+                <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+                <li class="item"><a href="./index.html" class="nav-link">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="roof-connection list">
+              <li class="flash">
+                <a href="mailto:info@devstudio.com" class="connection-link tormoz">
+                  <svg width="16" height="12" class="small">
+                    <use href="./images/symbol-defs-new.svg#icon-envelope-hover"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="flash">
+                <a href="tel:+380961111111" class="connection-link stupor">
+                  <svg width="10" height="16" class="small">
+                    <use href="./images/symbol-defs-new.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
             </ul>
-          </div>
       </div>
-    </div>
-  </header>
+    </header>
+      
   <main>
     <section class="hero overlay">
        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
@@ -447,7 +447,34 @@
      </div>
     </div>
   </footer>
-  <script src="./js/mobile-menu.js"></script>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+     <button class="menu-toggle js-close-menu">
+       <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+         <path fill-rule="evenodd"
+           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+           clip-rule="evenodd"></path>
+        </svg>
+     </button>
+     <ul class="mobile-menu">
+       <li><a href="./index.html" class="link">Студія</a></li>
+       <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+       <li><a href="./index.html" class="link">Контакти</a></li>
+     </ul>
+     <ul class="">
+       <li><a href="tel:+380961111111" class="">+38 096 111 11 11</a></li>
+       <li><a href="mailto:info@devstudio.com" class="">info@devstudio.com</a></li>
+     </ul>
+     <ul class="reider">
+      <li class=""><a class="reider-link">Instagram</a></li>
+      <li><a class="reider-link">Twitter</a></li>
+      <li><a class="reider-link">Facebook</a></li>
+      <li><a class="reider-link">LinkedIn</a></li>
+     </ul>
+ </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 </html>
