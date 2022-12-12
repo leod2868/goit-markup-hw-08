@@ -690,7 +690,12 @@ button {
   background-color: transparent;
   color: #F5F5F5;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .signature input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .signature input {
     width: 450px;
   }

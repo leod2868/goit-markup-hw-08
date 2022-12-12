@@ -378,6 +378,11 @@ button {
   color: #000;
 }
 
+@media (max-width: 767px) {
+  .menu-heider {
+    display: none;
+  }
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -391,6 +396,9 @@ button {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+.menu-toggle:hover {
+  color: #2196F3;
 }
 
 @media (min-width: 768px) {
@@ -418,19 +426,75 @@ button {
 
 .menu-container.is-open {
   transform: translateX(0);
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 0;
+  right: 15px;
+}
+
+.mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.mobile-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.mobile-menu .linkmo {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-contact .linkpro {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 32px;
+}
+
+.mobile-contact .linkpvo {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.linkmo {
+  margin-bottom: 32px;
+}
+.linkmo:hover, .linkmo:focus {
+  color: #2196F3;
+}
+
+.linkmo:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .reider {
   display: flex;
   gap: 20px;
-  margin-top: 64px;
 }
 
 .reider-link {
@@ -551,6 +615,15 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px auto;
+}
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    max-width: 360px;
+  }
 }
 
 .button {
@@ -871,6 +944,14 @@ button {
   line-height: 1.17;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .development {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
+}
 
 .home {
   position: relative;
@@ -984,6 +1065,7 @@ button {
 .clients {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -1151,7 +1233,12 @@ button {
   background-color: transparent;
   color: #F5F5F5;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .signature input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .signature input {
     width: 450px;
   }

@@ -1,8 +1,11 @@
 .clients {
+    @extend %list;
      display: flex;
      flex-wrap: wrap;
-    gap: 30px;
-    @extend %list;
+     justify-content: center;
+     gap: 30px;
+
+    
 }
 .hope {
     display: flex;

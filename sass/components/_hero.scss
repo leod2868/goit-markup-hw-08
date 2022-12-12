@@ -16,8 +16,17 @@
         text-transform: uppercase;
         margin: 0 auto 30px auto;
         // width: 696px;
+        @media screen and (max-width: 1199px) {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.6;
+            letter-spacing: 0.06em; 
+            max-width: 360px;       
         }
-}
+            
+        }
+        }
+
 .button {
     color: $white-color;
     background-color: $accent-color;

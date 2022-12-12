@@ -15,7 +15,11 @@
             padding: 15px 16px;
             background-color: transparent;
             color: $primary-background-color;
-            @media screen and (max-width: 1199px){
+            @media screen and (max-width: 479px) {
+                    width: 100%;
+                }
+
+            @media screen and (min-width:480px) and (max-width: 1199px){
                 width: 450px;
             }
 }
