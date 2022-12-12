@@ -604,6 +604,7 @@ button {
 @media screen and (max-width: 1199px) {
   .hero {
     padding: 118px 0;
+    height: 400px;
   }
 }
 .hero-title {
@@ -650,6 +651,11 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 1199px) {
+  .overlay {
+    height: 400px;
+  }
 }
 
 .backdrop {
