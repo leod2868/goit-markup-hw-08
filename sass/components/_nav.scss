@@ -1,9 +1,10 @@
 .roof-nav {
     display: flex;
     align-items: center;
+    margin-right: 339px;
     @extend %list ;
     & .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 40px;
     }
     @media screen and (max-width: 1199px){
         margin-right: 114px;

@@ -362,6 +362,11 @@ button {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .main {
+    justify-content: space-between;
+  }
+}
 
 .menu-heider {
   display: flex;
@@ -391,9 +396,10 @@ button {
 .roof-nav {
   display: flex;
   align-items: center;
+  margin-right: 339px;
 }
 .roof-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 @media screen and (max-width: 1199px) {
   .roof-nav {
@@ -616,6 +622,12 @@ button {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .bigfooter {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .halffooter {
     text-align: center;
@@ -627,8 +639,13 @@ button {
     padding-left: 61px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .halffooter {
+    margin-right: 94px;
+  }
+}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .minifooter {
     display: flex;
     justify-content: space-between;
@@ -733,12 +750,14 @@ button {
   }
 }
 
-.subscription {
-  margin-left: auto;
-}
 @media screen and (max-width: 1199px) {
   .subscription {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .subscription {
+    margin-left: 93px;
   }
 }
 
@@ -756,9 +775,9 @@ button {
     width: 100%;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .signature input {
-    width: 450px;
+@media screen and (min-width: 1200px) {
+  .signature {
+    display: flex;
   }
 }
 

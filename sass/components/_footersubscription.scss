@@ -1,12 +1,15 @@
 .subscription {   
-           margin-left: auto;
+          
            @media screen and (max-width: 1199px){
-           text-align: center;
+           text-align: center;      
 }
+           @media screen and (min-width: 1199px) {
+            margin-left: 93px;
+           }
+
 
 }
 .signature {
-    // display: flex;
     & input {
             width: 358px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -18,12 +21,14 @@
             @media screen and (max-width: 479px) {
                     width: 100%;
                 }
-
-            @media screen and (min-width:480px) and (max-width: 1199px){
-                width: 450px;
             }
+
+@media screen and (min-width: 1200px) {
+             display: flex;
+            }
+
 }
-}
+
 .plus {
     margin-left: 12px;
     @media screen and (max-width: 1199px) {
