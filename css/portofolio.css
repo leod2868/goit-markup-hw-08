@@ -578,6 +578,18 @@ button {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .halffooter {
+    padding-left: 61px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .minifooter {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .footer-logo {
   color: #FFFFFF;
@@ -669,6 +681,11 @@ button {
 @media screen and (max-width: 1199px) {
   .chrom {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .chrom {
+    padding-right: 74px;
   }
 }
 
