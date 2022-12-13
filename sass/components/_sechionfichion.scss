@@ -25,8 +25,8 @@
 @media screen and (max-width: 767px){
     width: 210px;}
 }
-.hope {
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.hope { 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 226px;
     }
 }
@@ -39,8 +39,14 @@
         }
 }
 .fichion {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    @media screen and (max-width: 1199px){
     padding-top: 60px;
     padding-bottom: 60px;
+    }
+
+
 }
 .science {
 @extend %conteiner;

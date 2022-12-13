@@ -1,12 +1,12 @@
 .address {
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 28px;
 }
 .contacts-addres {
     color: $white-color;
     text-decoration: none;
-    line-height: 1.71;
-    margin-bottom: 9px;
+    line-height: 1.14;
+    margin-bottom: 12px;
     transition: color 250ms $timing-function;
     &:hover, &:focus {
             color: $accent-color;
@@ -15,7 +15,7 @@
 .contacts-link {
     color: $footer-text-color;
     text-decoration: none;
-    line-height: 1.71;
+    line-height: 1.14;
     transition: color 250ms $timing-function;
     &:hover,
         &:focus {
@@ -23,7 +23,7 @@
         }
 }
 .contacts-item {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
     &:last-child {
             margin-bottom: 0;
         }
