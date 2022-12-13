@@ -361,7 +361,10 @@ button {
 .main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.menu-heider {
+  display: flex;
 }
 
 .roof-logo {
@@ -372,6 +375,13 @@ button {
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+}
+@media screen and (max-width: 1199px) {
+  .roof-logo {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.17;
+  }
 }
 
 .roof-multi {
@@ -384,6 +394,11 @@ button {
 }
 .roof-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .roof-nav {
+    margin-right: 114px;
+  }
 }
 
 .nav-link {
@@ -419,14 +434,25 @@ button {
   background-color: #2196F3;
 }
 
-.roof-connection {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 30px;
+@media screen and (min-width: 1200px) {
+  .roof-connection {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 30px;
+  }
+  .roof-connection .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.roof-connection .item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 1199px) {
+  .roof-connection {
+    padding: 21px 0;
+  }
+}
+
+.roof-connection:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .connection-link {
@@ -442,6 +468,13 @@ button {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .connection-link {
+    font-size: 12px;
+    line-height: 1.17;
+    padding: 0;
+  }
+}
 .connection-link:hover, .connection-link:focus {
   color: #2196F3;
 }
@@ -455,8 +488,19 @@ button {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .small {
+    margin-right: 8px;
+  }
+}
 .small:hover {
   fill: #2196F3;
+}
+
+@media screen and (max-width: 1199px) {
+  .tormoz {
+    margin-bottom: 10px;
+  }
 }
 
 .top {

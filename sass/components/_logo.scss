@@ -6,7 +6,16 @@
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
-}
+     @media screen and (max-width:1199px){
+    
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.17;
+     }
+        
+     }   
+    
+
 .roof-multi {
     color: $black-color;
 }

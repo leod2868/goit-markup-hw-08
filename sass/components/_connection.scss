@@ -1,13 +1,26 @@
 .roof-connection {
+    @extend %list;
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     margin-left: auto;
     gap: 30px;
-    @extend %list;
     & .item:not(:last-child) {
             margin-right: 50px;
         }
 }
+
+ @media screen and (max-width: 1199px) {
+         padding: 21px 0;
+    }
+}
+.roof-connection:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
 .connection-link {
      color: $primary-text-color;
      text-decoration: none;
@@ -19,6 +32,15 @@
      align-items: center;
      padding-top: 32px;
      padding-bottom: 32px;
+    @media screen and (max-width: 1199px) {
+        
+            font-size: 12px;
+            line-height: 1.17;
+            
+        
+            
+        padding: 0;
+    }
     transition: color 250ms $timing-function;
     &:hover,
     &:focus {
@@ -32,8 +54,16 @@
 .small {
     fill: currentColor;
     margin-right: 10px;
+    @media screen and (max-width: 1199px){
+    margin-right: 8px;
+    }
     transition: fill 250ms $timing-function;
     &:hover {
             fill: $accent-color;
         }
+}
+.tormoz {
+@media screen and (max-width: 1199px){
+    margin-bottom: 10px;
+}
 }

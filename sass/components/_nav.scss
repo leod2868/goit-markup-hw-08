@@ -5,7 +5,12 @@
     & .item:not(:last-child) {
     margin-right: 50px;
     }
-}
+    @media screen and (max-width: 1199px){
+        margin-right: 114px;
+    }
+        
+    }
+
 .nav-link {
      color: $title-text-color;
      text-decoration: none;

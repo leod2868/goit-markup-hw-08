@@ -1,8 +1,11 @@
 .main {
    display: flex;
    align-items: center ;
-   justify-content: space-between;
+   
    @extend %conteiner;
    
    
 }
+.menu-heider {
+    display: flex;
+}                                                                                                               
