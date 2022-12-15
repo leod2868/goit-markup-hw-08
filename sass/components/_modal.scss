@@ -150,7 +150,11 @@
 .check {
     padding-left: 10px;
     margin: 0;
+    @media (min-width: 1200px) {
+      padding-left: 32px;  
+    }
 }
+
 
 .check__input {
     position: absolute;
@@ -178,7 +182,7 @@
 
 .check__input:checked+.check__box {
     background-color: var(--accent-color);
-    background-image: url('../../images/superturbo.svg');
+    background-image: url('./../images/superturbo.svg');
     background-size: contain;
 }
 
