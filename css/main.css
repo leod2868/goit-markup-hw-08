@@ -520,7 +520,8 @@ button {
   color: #2196F3;
   position: relative;
 }
-.reider-link::after {
+
+.reider-item:not(:last-child) .reider-link::after {
   content: "";
   position: absolute;
   width: 22px;
