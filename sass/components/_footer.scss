@@ -6,8 +6,10 @@
           
 }
 .bigfooter {
+    @media screen and (min-width: 1200px){
     display: flex;
     align-items: baseline;
+    }
     @extend %conteiner;
     @media screen and (min-width: 1200px){
     display: flex;
