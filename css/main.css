@@ -1251,11 +1251,6 @@ button {
     align-items: baseline;
   }
 }
-@media screen and (min-width: 1200px) {
-  .bigfooter {
-    display: flex;
-  }
-}
 
 @media screen and (max-width: 1199px) {
   .halffooter {
